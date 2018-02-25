@@ -145,11 +145,24 @@
     <article id="post-JS设计模式阅读笔记：构造器模式和模块模式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/25/JS设计模式阅读笔记：构造器模式和模块模式/">JS设计模式阅读笔记-构造器模式和模块模式</a>
+    </h1>
+  
+
+        
+        <a href="/2018/02/25/JS设计模式阅读笔记：构造器模式和模块模式/" class="archive-article-date">
+  	<time datetime="2018-02-25T09:47:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-25</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>title: JS设计模式阅读笔记-构造器模式和模块模式<br>date: 2018-02-25 17:47:10</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><blockquote>
+        <blockquote>
 <p>JavaScript 设计模式</p>
 <h3 id="Constructor（构造器）模式"><a href="#Constructor（构造器）模式" class="headerlink" title="Constructor（构造器）模式"></a>Constructor（构造器）模式</h3><p>最基本的一种创建自定义对象的方法，用法如下：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">year</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.year = year;</span><br><span class="line">    <span class="keyword">this</span>.say = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`I am <span class="subst">$&#123;<span class="keyword">this</span>.year&#125;</span> years old`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> tom = <span class="keyword">new</span> Person(<span class="number">5</span>);</span><br><span class="line"><span class="keyword">var</span> jack = <span class="keyword">new</span> Person(<span class="number">19</span>);</span><br><span class="line">tom.say();            <span class="comment">//I am 5 years old</span></span><br><span class="line">tom.say ===jack.say;  <span class="comment">//false</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
