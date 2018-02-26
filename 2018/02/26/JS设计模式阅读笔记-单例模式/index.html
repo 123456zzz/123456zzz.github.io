@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>lay的个人博客</title>
+  <title>JS设计模式阅读笔记-单例模式 | lay的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Start from scratch">
-<meta property="og:type" content="website">
-<meta property="og:title" content="lay的个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Singleton（单例）模式单例模式限制类的实例化对象为一次，当实例不存在时，通过某种方法创建实例，当实例存在时，简单的返回对象的引用既可。书上的实现思路为：利用闭包模拟私有数据，中间有判断实例是否存在的逻辑，最后返回一个能获得实例的公有函数。代码如下：123456789101112131415var singleton = (function()&amp;#123;    var instance;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS设计模式阅读笔记-单例模式">
+<meta property="og:url" content="http://yoursite.com/2018/02/26/JS设计模式阅读笔记-单例模式/index.html">
 <meta property="og:site_name" content="lay的个人博客">
-<meta property="og:description" content="Start from scratch">
+<meta property="og:description" content="Singleton（单例）模式单例模式限制类的实例化对象为一次，当实例不存在时，通过某种方法创建实例，当实例存在时，简单的返回对象的引用既可。书上的实现思路为：利用闭包模拟私有数据，中间有判断实例是否存在的逻辑，最后返回一个能获得实例的公有函数。代码如下：123456789101112131415var singleton = (function()&amp;#123;    var instance;">
+<meta property="og:updated_time" content="2018-02-26T13:49:26.836Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lay的个人博客">
-<meta name="twitter:description" content="Start from scratch">
+<meta name="twitter:title" content="JS设计模式阅读笔记-单例模式">
+<meta name="twitter:description" content="Singleton（单例）模式单例模式限制类的实例化对象为一次，当实例不存在时，通过某种方法创建实例，当实例存在时，简单的返回对象的引用既可。书上的实现思路为：利用闭包模拟私有数据，中间有判断实例是否存在的逻辑，最后返回一个能获得实例的公有函数。代码如下：123456789101112131415var singleton = (function()&amp;#123;    var instance;">
   
     <link rel="alternative" href="/atom.xml" title="lay的个人博客" type="application/atom+xml">
   
@@ -140,16 +141,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-JS设计模式阅读笔记-单例模式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-JS设计模式阅读笔记-单例模式" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/26/JS设计模式阅读笔记-单例模式/">JS设计模式阅读笔记-单例模式</a>
+    <h1 class="article-title" itemprop="name">
+      JS设计模式阅读笔记-单例模式
     </h1>
   
 
@@ -174,6 +173,32 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -181,16 +206,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/26/JS设计模式阅读笔记-单例模式/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/02/26/JS设计模式阅读笔记-单例模式/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/25/JS设计模式阅读笔记：构造器模式和模块模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JS设计模式阅读笔记-构造器模式和模块模式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -210,632 +294,14 @@
 
 
 
-
   
-    <article id="post-JS设计模式阅读笔记：构造器模式和模块模式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/25/JS设计模式阅读笔记：构造器模式和模块模式/">JS设计模式阅读笔记-构造器模式和模块模式</a>
-    </h1>
   
 
-        
-        <a href="/2018/02/25/JS设计模式阅读笔记：构造器模式和模块模式/" class="archive-article-date">
-  	<time datetime="2018-02-25T09:47:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>JavaScript 设计模式</p>
-<h3 id="Constructor（构造器）模式"><a href="#Constructor（构造器）模式" class="headerlink" title="Constructor（构造器）模式"></a>Constructor（构造器）模式</h3><p>最基本的一种创建自定义对象的方法，用法如下：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">year</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.year = year;</span><br><span class="line">    <span class="keyword">this</span>.say = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`I am <span class="subst">$&#123;<span class="keyword">this</span>.year&#125;</span> years old`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> tom = <span class="keyword">new</span> Person(<span class="number">5</span>);</span><br><span class="line"><span class="keyword">var</span> jack = <span class="keyword">new</span> Person(<span class="number">19</span>);</span><br><span class="line">tom.say();            <span class="comment">//I am 5 years old</span></span><br><span class="line">tom.say ===jack.say;  <span class="comment">//false</span></span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<p>但是这样的话，每个实例化出来的对象的say函数无法共享，js函数有个prototype属性，这个函数创建的对象都会具有这个prototype的所有属性。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">year</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.year = year;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.say = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`I am <span class="subst">$&#123;<span class="keyword">this</span>.year&#125;</span> years old`</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> tom = <span class="keyword">new</span> Person(<span class="number">5</span>);</span><br><span class="line"><span class="keyword">var</span> jack = <span class="keyword">new</span> Person(<span class="number">19</span>);</span><br><span class="line">tom.say();            <span class="comment">//I am 5 years old</span></span><br><span class="line">tom.say ===jack.say;  <span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="Module（模块）模式"><a href="#Module（模块）模式" class="headerlink" title="Module（模块）模式"></a>Module（模块）模式</h3><p>Module模式在js中十分常用，由于闭包，模块内声明的变量和函数仅在内部可用，返回的对象暴露了接口提供给使用者，隐藏了内部的细节。<br>一个简单的实例<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myModule = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> myPrivateCount = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        incrementCounter: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> ++myPrivateCount;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="built_in">console</span>.log(myModule.incrementCounter());  <span class="comment">//1</span></span><br><span class="line"><span class="built_in">console</span>.log(myModule.myPrivateCounter);    <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/25/JS设计模式阅读笔记：构造器模式和模块模式/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-从require-express-和require-express-看node-js模块系统" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/08/从require-express-和require-express-看node-js模块系统/">从require(express)和require(express)()看node.js模块系统</a>
-    </h1>
   
 
-        
-        <a href="/2018/01/08/从require-express-和require-express-看node-js模块系统/" class="archive-article-date">
-  	<time datetime="2018-01-08T09:18:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在 Node.js 中，文件和模块是一一对应的（每个文件被视为一个独立的模块）</p>
-<p>node.js模块系统依靠require()和exports，基本用法为：<br>假设有a.js和b.js在同一目录下，<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//a.js</span></span><br><span class="line"><span class="keyword">var</span> r = <span class="number">1</span>;</span><br><span class="line">exports.area = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> r*r*<span class="number">3.14</span>;</span><br><span class="line">    &#125;</span><br><span class="line">exports.R = r;</span><br><span class="line"></span><br><span class="line"><span class="comment">//b.js</span></span><br><span class="line"><span class="keyword">var</span> circle = <span class="built_in">require</span>(<span class="string">"./a"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(circle.area());   <span class="comment">//3.14</span></span><br><span class="line"><span class="built_in">console</span>.log(circle.R);       <span class="comment">//1</span></span><br></pre></td></tr></table></figure></p>
-<p>通过给a.js内的exports上添加属性暴露出area()和R，就可以在b.js中通过require得到这些属性。<br>另外的用法：<br>文件中的module.exports可以被赋予一个新的值（例如函数或对象）。<br>例如：express.js中<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">exports = <span class="built_in">module</span>.exports = createApplication;</span><br><span class="line"></span><br><span class="line"><span class="comment">//create express app</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createApplication</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> app = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line">    .....</span><br><span class="line">    <span class="keyword">return</span> app;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>之前看<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">"express"</span>);    </span><br><span class="line"><span class="keyword">var</span> app = express();</span><br></pre></td></tr></table></figure></p>
-<p>一直不知道express和app的两者的区别，其实express就是对express文件的引用，而app是因为<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = createApplication;</span><br></pre></td></tr></table></figure></p>
-<p>这句话使得<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">express = <span class="function"><span class="keyword">function</span> <span class="title">createApplication</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure></p>
-<p>然后express()就可以得到app对象，类似于工厂模式。每次都可以得到一个封装好的对象。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/08/从require-express-和require-express-看node-js模块系统/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-MongoDB安装服务时Error-connecting-to-the-Service-Control-Manager" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/08/MongoDB安装服务时Error-connecting-to-the-Service-Control-Manager/">MongoDB安装服务时Error connecting to the Service Control Manager</a>
-    </h1>
   
 
-        
-        <a href="/2018/01/08/MongoDB安装服务时Error-connecting-to-the-Service-Control-Manager/" class="archive-article-date">
-  	<time datetime="2018-01-08T09:16:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一、问题"><a href="#一、问题" class="headerlink" title="一、问题"></a>一、问题</h3><p>MongoDB根目录：D:\mongodb</p>
-<p>切换到D:\mongodb\bin&gt;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod --logpath &quot;D:\data\log\mongodb.log&quot; --logappend --dbpath &quot;D:\data\db&quot; --directoryperdb --serviceName &quot;MongoDB&quot;  --install</span><br></pre></td></tr></table></figure>
-<p>输入以上命令后命令行没有反应，在mongodb.log中查看“Error connecting to the Service Control Manager: 拒绝访问。”。</p>
-<h3 id="二、原因及解决方法"><a href="#二、原因及解决方法" class="headerlink" title="二、原因及解决方法"></a>二、原因及解决方法</h3><p>由于权限不够，需要在管理员权限下进行，Ctrl+X+A(其中一种方法)进入powershell，重复上面的操作后，即可成功安装。</p>
-<blockquote>
-<p>另外：日志文件路径需要指定为文件，如指定为log目录(D:\data\log)下的mongodb.log。</p>
-</blockquote>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/08/MongoDB安装服务时Error-connecting-to-the-Service-Control-Manager/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-编写可维护的JavaScript-编码风格" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/08/编写可维护的JavaScript-编码风格/">编写可维护的JavaScript-编码风格</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/08/编写可维护的JavaScript-编码风格/" class="archive-article-date">
-  	<time datetime="2018-01-08T09:05:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>此文记下自己的编程风格，以后据此编程，加粗字尤为注意。</p>
-<h3 id="一-基本格式"><a href="#一-基本格式" class="headerlink" title="一. 基本格式"></a>一. 基本格式</h3><ul>
-<li>使用4个空格或tab缩进。</li>
-<li>语句结尾加上分号。</li>
-<li><code>换行时加上2个单位缩进。</code></li>
-<li><code>在合适的场景中使用空行，提高代码可读性。</code></li>
-<li>使用驼峰大小写命名变量和函数。<code>函数第一个单词为动词，如get,is等。</code></li>
-<li>常量使用大写字母和下划线，构造函数首字母大写(大驼峰命名法)。</li>
-<li>字符串使用双引号，<code>用”+”连接多行字符串。</code></li>
-<li>不省略小数点之前和之后数字。<code>避免使用八进制。</code></li>
-<li><code>避免使用undefined和null。</code></li>
-<li><p>使用对象直接量和数组直接量。</p>
-<h3 id="二-注释"><a href="#二-注释" class="headerlink" title="二. 注释"></a>二. 注释</h3></li>
-<li><p>单行注释:</p>
-<blockquote>
-<ul>
-<li><code>行尾注释与结尾之间一个空格缩进</code>,解释之前的代码。</li>
-<li>独占一行的注释，解释下一行代码。</li>
-<li>多行注释一个代码块。</li>
-</ul>
-</blockquote>
-</li>
-<li><p>多行注释:</p>
-<blockquote>
-<ul>
-<li><code>注释前空一行。</code></li>
-<li>以/<em> 开始，</em>/结束，这两行不加注释。</li>
-<li>中间部分以*开始，注释部分前一个空格缩进。<h3 id="三-语句和表达式"><a href="#三-语句和表达式" class="headerlink" title="三.语句和表达式"></a>三.语句和表达式</h3></li>
-</ul>
-</blockquote>
-</li>
-<li><p>所有的块语句使用花括号。(if,for,while,do…while…,try…catch…finally…)</p>
-</li>
-<li><code>左花括号放在块语句第一句结尾，左圆括号之前和右圆括号之后添加一个空格。</code></li>
-<li>避免使用with语句和continue，<code>for循环初始化部分不应有变量声明。</code></li>
-<li>switch语句中每组case保持一个缩进，<code>case和default之间空一行</code>，每组case都以break,return,throw结尾，没有default用一行注释代替。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (condition) &#123;</span><br><span class="line">    statements</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    statements</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span> (value) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">        <span class="comment">/* falls through*/</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">        doSomething();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="comment">//没有default</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="四-变量，函数和运算符"><a href="#四-变量，函数和运算符" class="headerlink" title="四. 变量，函数和运算符"></a>四. 变量，函数和运算符</h3><ul>
-<li><p>局部变量定义作为函数内第一条语句，<code>使用单var语句。</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> count = <span class="number">10</span>,</span><br><span class="line">    name = <span class="string">"Nicholas"</span>,</span><br><span class="line">    empty;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>先声明函数，后使用函数。函数名和左圆括号间无空格，右括号和左花括号间留一个空格。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params">arg1,arg2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> arg1 + arg2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>立即执行函数用一对圆括号包裹起来。</p>
-</li>
-<li><p>避免在全局作用域内使用”use strict”。</p>
-</li>
-<li>由于JavaScript有强制类型转换，<code>避免使用==和！=，应使用===和!==。</code></li>
-<li>避免使用eval()</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/08/编写可维护的JavaScript-编码风格/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-js提升问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/08/js提升问题/">js提升问题</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/08/js提升问题/" class="archive-article-date">
-  	<time datetime="2018-01-08T08:53:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="JavaScript引擎先编译后执行，编译的一部分就是找到所有的声明，然后与合适的作用域关联起来。"><a href="#JavaScript引擎先编译后执行，编译的一部分就是找到所有的声明，然后与合适的作用域关联起来。" class="headerlink" title="JavaScript引擎先编译后执行，编译的一部分就是找到所有的声明，然后与合适的作用域关联起来。"></a>JavaScript引擎先编译后执行，编译的一部分就是找到所有的声明，然后与合适的作用域关联起来。</h3><h3 id="变量和函数声明会在代码执行前首先处理。"><a href="#变量和函数声明会在代码执行前首先处理。" class="headerlink" title="变量和函数声明会在代码执行前首先处理。"></a>变量和函数声明会在代码执行前首先处理。</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> a;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br></pre></td></tr></table></figure>
-<h4 id="只有声明本身会被提升（被移动到作用域的最上方），赋值和其它逻辑会留在原地。"><a href="#只有声明本身会被提升（被移动到作用域的最上方），赋值和其它逻辑会留在原地。" class="headerlink" title="只有声明本身会被提升（被移动到作用域的最上方），赋值和其它逻辑会留在原地。"></a>只有声明本身会被提升（被移动到作用域的最上方），赋值和其它逻辑会留在原地。</h4> <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(a);</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line">    <span class="comment">//解析为</span></span><br><span class="line">    <span class="keyword">var</span> a;</span><br><span class="line">    <span class="built_in">console</span>.log(a);</span><br><span class="line">    a = <span class="number">2</span>;<span class="comment">//undefined</span></span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string">#### 函数表达式不会被提升。</span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>js</span><br><span class="line">    foo(); <span class="comment">//TypeError</span></span><br><span class="line">    bar(); <span class="comment">//ReferenceError</span></span><br><span class="line">    <span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="comment">//解析为</span></span><br><span class="line">    <span class="keyword">var</span> foo;</span><br><span class="line">    foo();</span><br><span class="line">    bar();</span><br><span class="line">    foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> bar =...self...</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
-<h4 id="函数声明会被优先提升。"><a href="#函数声明会被优先提升。" class="headerlink" title="函数声明会被优先提升。"></a>函数声明会被优先提升。</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">foo();</span><br><span class="line"><span class="keyword">var</span> foo;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line">foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//解析为</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//var foo;重复声明</span></span><br><span class="line">foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="函数声明不会被所在作用域内的条件逻辑控制。这个问题已经得到改善（ie11和谷歌）-会报出（TypeError-foo-is-not-a-function-。"><a href="#函数声明不会被所在作用域内的条件逻辑控制。这个问题已经得到改善（ie11和谷歌）-会报出（TypeError-foo-is-not-a-function-。" class="headerlink" title="函数声明不会被所在作用域内的条件逻辑控制。这个问题已经得到改善（ie11和谷歌）,会报出（TypeError:foo is not a function)。"></a>函数声明不会被所在作用域内的条件逻辑控制。这个问题已经得到改善（ie11和谷歌）,会报出（TypeError:foo is not a function)。</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">foo();<span class="comment">//b(仅在ie10及以下版本)</span></span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;<span class="built_in">console</span>.log(<span class="string">"a"</span>);&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;<span class="built_in">console</span>.log(<span class="string">"b"</span>);&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/08/js提升问题/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ES6-学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/08/ES6-学习/">ES6 学习</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/08/ES6-学习/" class="archive-article-date">
-  	<time datetime="2018-01-08T08:47:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-let-const-块级作用域"><a href="#1-let-const-块级作用域" class="headerlink" title="1.let const 块级作用域"></a>1.let const 块级作用域</h3><ul>
-<li>let：常用于for循环和父子作用域中，创建块级作用域，只在所在代码块中有效.<br>{<br>let a = 1;<br>}<br>a // a is not defined</li>
-<li><p>const : 一声明就要赋值，赋值后“值”不可改变。（对于简单数据，数据指定保存在一个内存地址内，相当于常量；对于复杂数据，保存指针，不可修改数据类型）</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">const</span> ARR = [<span class="number">5</span>,<span class="number">6</span>];</span><br><span class="line">  ARR.push(<span class="number">7</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(ARR); <span class="comment">// [5,6,7]</span></span><br><span class="line">  ARR = <span class="number">10</span>; <span class="comment">// TypeError</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>let不存在变量提升，必须先声明，后使用，不可重复声明。</p>
-</li>
-<li>const一般使用大写字母。<h3 id="2-变量的结构赋值"><a href="#2-变量的结构赋值" class="headerlink" title="2.变量的结构赋值"></a>2.变量的结构赋值</h3></li>
-<li><p>解构可以避免在对象赋值时产生中间变量，常用于数组和对象中，但是具有 Iterator 接口都可以采用解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">let</span> &#123; foo, bar &#125; = &#123; <span class="attr">foo</span>: <span class="string">"aaa"</span>, <span class="attr">bar</span>: <span class="string">"bbb"</span> &#125;;</span><br><span class="line">foo <span class="comment">// "aaa"</span></span><br><span class="line">bar <span class="comment">// "bbb"</span></span><br><span class="line"><span class="keyword">let</span> [x, y, z] = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]);</span><br><span class="line">x <span class="comment">// "a"</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>字符串，先转化为类似数组的对象，再解析赋值。数据和布尔值转化为对象，再解析赋值。undefined和null不可解析赋值。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [a, b, c, d, e] = <span class="string">'hello'</span>;</span><br><span class="line">a <span class="comment">// "h"</span></span><br><span class="line"><span class="keyword">let</span> &#123;<span class="attr">toString</span>: s&#125; = <span class="number">123</span>;</span><br><span class="line">s === <span class="built_in">Number</span>.prototype.toString <span class="comment">// true</span></span><br><span class="line"><span class="keyword">let</span> &#123; <span class="attr">prop</span>: x &#125; = <span class="literal">undefined</span>; <span class="comment">// TypeError</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>用途：</p>
-</li>
-<li><p>交换变量的值</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> y = <span class="number">2</span>;</span><br><span class="line">[x, y] = [y, x];</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>传参和得到函数返回值</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">example</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> [a, b, c] = example();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">&#123;x, y, z&#125;</span>) </span>&#123; ... &#125;</span><br><span class="line">f(&#123;<span class="attr">z</span>: <span class="number">3</span>, <span class="attr">y</span>: <span class="number">2</span>, <span class="attr">x</span>: <span class="number">1</span>&#125;);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>提取json参数</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> jsonData = &#123;</span><br><span class="line">  id: <span class="number">42</span>,</span><br><span class="line">  status: <span class="string">"OK"</span>,</span><br><span class="line">  data: [<span class="number">867</span>, <span class="number">5309</span>]</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">let</span> &#123; id, status, <span class="attr">data</span>: number &#125; = jsonData;</span><br><span class="line"><span class="built_in">console</span>.log(id, status, number);</span><br><span class="line"><span class="comment">// 42, "OK", [867, 5309]</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/08/ES6-学习/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Hexo-GitHub-建立博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/08/Hexo-GitHub-建立博客/">Hexo GitHub 建立博客</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/08/Hexo-GitHub-建立博客/" class="archive-article-date">
-  	<time datetime="2018-01-08T08:34:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="网上已有很多类似教程，只是个人随记，纪念一个hexo大坑，顺便用用markdowm。-windows"><a href="#网上已有很多类似教程，只是个人随记，纪念一个hexo大坑，顺便用用markdowm。-windows" class="headerlink" title="网上已有很多类似教程，只是个人随记，纪念一个hexo大坑，顺便用用markdowm。(windows)"></a>网上已有很多类似教程，只是个人随记，纪念一个hexo大坑，顺便用用markdowm。(windows)</h4><h3 id="1：环境配置"><a href="#1：环境配置" class="headerlink" title="1：环境配置"></a>1：环境配置</h3><p>1.安装git<br>参见<a href="http://iissnan.com/progit/html/zh/ch1_4.html" target="_blank" rel="noopener">Pro git</a></p>
-<p>安装node.js<br>参见<a href="http://nodejs.cn/" target="_blank" rel="noopener">node.js中文网</a></p>
-<h3 id="2：hexo的安装配置"><a href="#2：hexo的安装配置" class="headerlink" title="2：hexo的安装配置"></a>2：hexo的安装配置</h3><ul>
-<li>安装hexo：npm install -g hexo-cli  </li>
-<li>新建文件夹，例如我新建了blog C\Users\lenovo\bolg    </li>
-<li>cd C：\Users\lenovo\blog在目标文件夹中执行 hexo init初始化    </li>
-<li>执行hexo generate生成静态文件   </li>
-<li>执行 hexo server，可在本地预览   <h3 id="3：hexo部署到GitHub上"><a href="#3：hexo部署到GitHub上" class="headerlink" title="3：hexo部署到GitHub上"></a>3：hexo部署到GitHub上</h3></li>
-<li>建立一个仓库，命名为yourname.github.io。</li>
-<li><p>和本地关联，修改_config.yml如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br><span class="line">repo: https://github.com/ yourname/yourname.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行命令 npm install hexo-deployer-git –save</p>
-</li>
-<li>执行命令 hexo deploy</li>
-<li>在浏览器中输入http:// yourname.github.io/j即可看到自己的博客了。<br>Tips: 配置SSH-key,可避免每次输入密码。<h3 id="hexo常见命令："><a href="#hexo常见命令：" class="headerlink" title="hexo常见命令："></a>hexo常见命令：</h3>hexo new “postname”—-新建文章<br>hexo generate(hexo g)—-生成静态页面<br>hexo server(hexo s)—-本地预览<br>hexo deploy(hexo d)—-部署到GitHub上<br>hexo g -d(hexo d -g)—-一键部署<h3 id="hexo错误总结："><a href="#hexo错误总结：" class="headerlink" title="hexo错误总结："></a>hexo错误总结：</h3>不执行命令：<br>如果执行任何help，init以及version以外的命令，一直得到hexo help的内容，可能是package.json的缺失：(官网文档这么写的，然而我init了多次)<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  “hexo”：&#123;</span><br><span class="line">    “version”：“<span class="number">3.2</span><span class="number">.2</span>”</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/08/Hexo-GitHub-建立博客/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/08/hello-world/" class="archive-article-date">
-  	<time datetime="2018-01-08T08:21:32.391Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/08/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -858,8 +324,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
