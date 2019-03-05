@@ -6,18 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>JS设计模式阅读笔记-构造器模式和模块模式 | lay的个人博客</title>
+  <title>Archives: 2019/3 | lay的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JavaScript 设计模式 Constructor（构造器）模式最基本的一种创建自定义对象的方法，用法如下：12345678910function Person(year)&amp;#123;    this.year = year;    this.say = function()&amp;#123;        console.log(`I am $&amp;#123;this.year&amp;#125; year">
-<meta property="og:type" content="article">
-<meta property="og:title" content="JS设计模式阅读笔记-构造器模式和模块模式">
-<meta property="og:url" content="http://yoursite.com/2018/02/25/JS设计模式阅读笔记：构造器模式和模块模式/index.html">
+  <meta name="description" content="Start from scratch">
+<meta property="og:type" content="website">
+<meta property="og:title" content="lay的个人博客">
+<meta property="og:url" content="http://yoursite.com/archives/2019/03/index.html">
 <meta property="og:site_name" content="lay的个人博客">
-<meta property="og:description" content="JavaScript 设计模式 Constructor（构造器）模式最基本的一种创建自定义对象的方法，用法如下：12345678910function Person(year)&amp;#123;    this.year = year;    this.say = function()&amp;#123;        console.log(`I am $&amp;#123;this.year&amp;#125; year">
-<meta property="og:updated_time" content="2018-02-25T13:08:06.489Z">
+<meta property="og:description" content="Start from scratch">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS设计模式阅读笔记-构造器模式和模块模式">
-<meta name="twitter:description" content="JavaScript 设计模式 Constructor（构造器）模式最基本的一种创建自定义对象的方法，用法如下：12345678910function Person(year)&amp;#123;    this.year = year;    this.say = function()&amp;#123;        console.log(`I am $&amp;#123;this.year&amp;#125; year">
+<meta name="twitter:title" content="lay的个人博客">
+<meta name="twitter:description" content="Start from scratch">
   
     <link rel="alternative" href="/atom.xml" title="lay的个人博客" type="application/atom+xml">
   
@@ -141,175 +140,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JS设计模式阅读笔记：构造器模式和模块模式" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      JS设计模式阅读笔记-构造器模式和模块模式
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/03/05/斐波那契数列/" class="archive-article-date">
+  	<time datetime="2019-03-05T10:06:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-05</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/03/05/斐波那契数列/">斐波那契数列</a>
     </h1>
   
 
-        
-        <a href="/2018/02/25/JS设计模式阅读笔记：构造器模式和模块模式/" class="archive-article-date">
-  	<time datetime="2018-02-25T09:47:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>JavaScript 设计模式</p>
-<h3 id="Constructor（构造器）模式"><a href="#Constructor（构造器）模式" class="headerlink" title="Constructor（构造器）模式"></a>Constructor（构造器）模式</h3><p>最基本的一种创建自定义对象的方法，用法如下：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">year</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.year = year;</span><br><span class="line">    <span class="keyword">this</span>.say = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`I am <span class="subst">$&#123;<span class="keyword">this</span>.year&#125;</span> years old`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> tom = <span class="keyword">new</span> Person(<span class="number">5</span>);</span><br><span class="line"><span class="keyword">var</span> jack = <span class="keyword">new</span> Person(<span class="number">19</span>);</span><br><span class="line">tom.say();            <span class="comment">//I am 5 years old</span></span><br><span class="line">tom.say ===jack.say;  <span class="comment">//false</span></span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<p>但是这样的话，每个实例化出来的对象的say函数无法共享，js函数有个prototype属性，这个函数创建的对象都会具有这个prototype的所有属性。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">year</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.year = year;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.say = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`I am <span class="subst">$&#123;<span class="keyword">this</span>.year&#125;</span> years old`</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> tom = <span class="keyword">new</span> Person(<span class="number">5</span>);</span><br><span class="line"><span class="keyword">var</span> jack = <span class="keyword">new</span> Person(<span class="number">19</span>);</span><br><span class="line">tom.say();            <span class="comment">//I am 5 years old</span></span><br><span class="line">tom.say ===jack.say;  <span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="Module（模块）模式"><a href="#Module（模块）模式" class="headerlink" title="Module（模块）模式"></a>Module（模块）模式</h3><p>Module模式在js中十分常用，由于闭包，模块内声明的变量和函数仅在内部可用，返回的对象暴露了接口提供给使用者，隐藏了内部的细节。<br>一个简单的实例<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myModule = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> myPrivateCount = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        incrementCounter: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> ++myPrivateCount;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="built_in">console</span>.log(myModule.incrementCounter());  <span class="comment">//1</span></span><br><span class="line"><span class="built_in">console</span>.log(myModule.myPrivateCounter);    <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure></p>
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/weixin.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/02/25/JS设计模式阅读笔记：构造器模式和模块模式/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/02/26/JS设计模式阅读笔记-单例模式/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JS设计模式阅读笔记-单例模式
-        
-      </div>
-    </a>
   
   
-    <a href="/2018/01/08/从require-express-和require-express-看node-js模块系统/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">从require(express)和require(express)()看node.js模块系统</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -332,8 +205,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
